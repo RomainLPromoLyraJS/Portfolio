@@ -1,0 +1,44 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark-color;
+    margin: 0 auto;
+    
+
+    &__container {
+        
+        &__title {
+            font-size: 6em;
+            padding: 0.5em;
+            color: $white-color;
+
+            &__letter {
+                color: $gold-color;
+                font-size: 4rem;
+            }
+        }    
+    }
+    
+  
+    &__links {
+        font-size: 1.5em;
+        padding: 0.8em;
+        margin: 1em 3em;
+        
+        
+    
+        &__link {
+            margin: 0 0.8em;
+            color: $grey-color;
+            text-decoration: none;
+            
+            &:hover {
+                color: $white-color;
+                transition: 0.5s ease-in-out;
+            }
+        }
+    }
+
+   
+}

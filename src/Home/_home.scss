@@ -1,0 +1,31 @@
+.home {
+    min-height: calc(100vh - 120px);
+    margin: 100px 250px;
+    width: 50%;
+   
+    &__title {
+        font-size: 3em;
+        color: $grey-color;
+        font-weight: bold;
+
+        &__description {
+            color: $grey-color;
+            font-size: 1.5em;
+            margin: 0.3em 0;
+            font-style: italic; 
+        }
+
+        &__specialisation {
+            margin: 2em 0;
+            font-size: 4em;
+            color: $gold-color;
+            font-weight: bold;
+        }
+    }
+
+    &__text {
+        margin: 4em 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

@@ -5,7 +5,7 @@
 @import './vars';
 
 /* -- Fonts -- */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Mate+SC&family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
 
 /* -- components styles -- */
 @import '../App/app';
@@ -16,12 +16,13 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
 }
 
 h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'Mate SC', serif;
+  font-family: 'Mate SC', cursive;
 }

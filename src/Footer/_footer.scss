@@ -1,0 +1,38 @@
+.footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    color: $grey-color;
+    font-size: 1.3em;
+    display: flex;
+    
+    
+    &__follow {
+        display: flex;
+
+        &__text {
+            margin: 0 1em;
+            align-self: center;
+        }
+
+        &__logos {
+            font-size: 2em;
+            display: flex;
+            margin: 0 0.5em 0 0;
+
+            &__logo {
+                text-decoration: none;
+                color: $gold-color;
+                margin: 0 0.2em;
+            }
+        }
+    }
+
+    &__folio {
+        display: flex;
+        &__text {
+            align-self: center;
+        }
+    }
+}
