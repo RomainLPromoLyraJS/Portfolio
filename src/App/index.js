@@ -16,14 +16,14 @@ const App = () => {
     
       <Header />
 
-      <Route>
-      <Home exact path='/'/>
+      <Route exact path='/'>
+      <Home />
       </Route>
-      <Route>
-        <Resume exact path='/resume' />
+      <Route exact path='/resume'>
+        <Resume />
       </Route>
-      <Route>
-        <Projects exact path='/projects'/>
+      <Route exact path='/projects'>
+        <Projects />
       </Route>
       <Footer />
 

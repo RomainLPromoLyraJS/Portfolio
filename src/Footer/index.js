@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
@@ -10,11 +11,11 @@ const Footer = () => {
             <div className="footer__follow">
                 <p className="footer__follow__text">Follow my work on </p>
                 <div className="footer__follow__logos">
-                    <a href="#" target="_blank">
+                    <a href="https://www.linkedin.com/in/romain-lafosse/" target="_blank">
                         <div className="footer__follow__logos__logo"><FaLinkedin />
                         </div>
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://github.com/RomainLPromoLyraJS" target="_blank">
                         <div className="footer__follow__logos__logo"><FaGithub />
                         </div>
                     </a>

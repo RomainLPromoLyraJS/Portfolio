@@ -1,7 +1,7 @@
 .home {
-    min-height: calc(100vh - 120px);
-    margin: 100px 250px;
-    width: 50%;
+    min-height: calc(100vh - 374px);
+    margin: 100px 250px 0 250px;
+    width: 70%;
    
     &__title {
         font-size: 3em;
@@ -13,10 +13,20 @@
             font-size: 1.5em;
             margin: 0.3em 0;
             font-style: italic; 
+            display: flex;
+           max-width: 30%;
+
+            &::after {
+                content: "";
+                flex: 1 1;
+                border-bottom: 2px solid $grey-color;
+                margin: auto;
+                margin-left: 1em;
+            }
         }
 
         &__specialisation {
-            margin: 2em 0;
+            margin: 2em 0 0 0;
             font-size: 4em;
             color: $gold-color;
             font-weight: bold;
