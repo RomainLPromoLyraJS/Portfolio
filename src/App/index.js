@@ -6,6 +6,7 @@ import { Route } from 'react-router-dom';
 // Components
 import Header from '../Header';
 import Home from '../Home';
+import About from '../About';
 import Resume from '../Resume';
 import Projects from '../Projects';
 import Footer from '../Footer';
@@ -18,6 +19,9 @@ const App = () => {
 
       <Route exact path='/'>
       <Home />
+      </Route>
+      <Route exact path='/about'>
+      <About />
       </Route>
       <Route exact path='/resume'>
         <Resume />

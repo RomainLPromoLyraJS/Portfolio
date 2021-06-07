@@ -11,10 +11,13 @@
 @import '../App/app';
 @import '../Header/header';
 @import '../Home/home';
+@import '../About/about';
+@import '../Resume/resume';
+@import '../Projects/projects';
 @import '../Footer/footer';
 
 body {
-  margin: 0;
+  // margin: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }

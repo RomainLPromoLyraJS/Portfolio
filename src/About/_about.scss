@@ -1,11 +1,12 @@
-.home {
-    min-height: calc(100vh - 384px);
-    margin: 200px 250px 0 250px;
+.about {
+    min-height: calc(100vh - 334px);
+    margin: 150px 250px 0 250px;
     width: 70%;
-   
+
     &__title {
-        font-size: 3em;
-        color: $grey-color;
+        margin: 2em 0 0.3em 0;
+        font-size: 4em;
+        color: $gold-color;
         font-weight: bold;
 
         &__description {
@@ -15,6 +16,7 @@
             font-style: italic; 
             display: flex;
             max-width: 25%;
+            margin-bottom: 2em;
 
             &::after {
                 content: "";
@@ -24,18 +26,11 @@
                 margin-left: 1em;
             }
         }
-
-        &__specialisation {
-            margin: 2em 0 0 0;
-            font-size: 4em;
-            color: $gold-color;
-            font-weight: bold;
-        }
     }
 
     &__text {
-        margin: 4em 0;
-        font-size: 1.5rem;
-        text-align: center;
+        color: $white-color;
+        font-size: 1.5em;
+        line-height: 1.3em;
     }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <div>
+        <div className="projects">
             <p>je suis dans mes projets.</p>
         </div>
     );
