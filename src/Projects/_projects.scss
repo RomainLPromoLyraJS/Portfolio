@@ -2,4 +2,69 @@
     min-height: calc(100vh - 284px);
     margin: 100px 250px 0 250px;
     width: 70%;
+
+    &__title {
+        margin: 2em 0 0.2em 0;
+        font-size: 4em;
+        color: $gold-color;
+        font-weight: bold;
+    }
+
+    &__subtitle {
+        color: $grey-color;
+        font-size: 1.5em;
+        margin: 0.3em 0 1em 0;
+        font-style: italic; 
+        display: flex;
+        max-width: 25%;
+
+        &::after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid $grey-color;
+            margin: auto;
+            margin-left: 1em;
+        }
+    }
+    
+    &__section {
+        width: 500px;
+        display: inline-block;
+        margin: 0 2em;
+
+        &__project {
+            margin: 8em 0 0 0;
+            
+            &__links {
+                display: flex;
+                justify-content: center;
+
+                &__link {
+                    color: $grey-color;
+                    text-decoration: none;
+                    background: linear-gradient(to top, $white-color 0%, $white-color 5%, transparent 5.01%) no-repeat;
+                    background-size: 0 100%;
+                    transition: background-size 0.2s;
+                    font-size: 1.5em;
+                    margin-top: 0.5em;
+        
+                    &:hover {
+                        color: $white-color;
+                        transition: 0.4s ease-in-out;
+                        background-size: 100% 100%;
+                        
+                    }
+                }
+            }
+           
+    
+            &__img {
+                max-width: 100%;
+                width: 500px;
+                border-radius: 50px;
+    
+            }
+        }
+    }
+   
 }

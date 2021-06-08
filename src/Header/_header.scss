@@ -17,6 +17,8 @@
             padding: 0.2em 0.4em;
             color: $white-color;
             text-decoration: black;
+            margin-left: 0.2em;
+            margin-top: 0.1em;
 
             &__letter {
                 color: $gold-color;
@@ -30,7 +32,7 @@
     &__links {
         font-size: 1.5em;
         padding: 0.8em;
-        margin: 1em 3em;
+        margin: 1em 2em 1em 3em;
         
         
     
@@ -47,6 +49,15 @@
                 transition: 0.5s ease-in-out;
                 background-size: 100% 100%;
                 
+            }
+        }
+
+        &__darkmode {
+            margin: 0 0 0 2em;
+            padding-left: 1em;
+            
+            &:active {
+                background-color: $white-color;
             }
         }
     }
