@@ -2,4 +2,80 @@
     min-height: calc(100vh - 284px);
     margin: 100px 250px 0 250px;
     width: 70%;
+
+    &__title {
+        margin: 2em 0 0.2em 0;
+        font-size: 4em;
+        color: $gold-color;
+        font-weight: bold;
+    }
+
+    &__subtitle {
+        color: $grey-color;
+        font-size: 1.5em;
+        margin: 0.3em 0 1em 0;
+        font-style: italic; 
+        display: flex;
+        max-width: 35%;
+
+        &::after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid $grey-color;
+            margin: auto;
+            margin-left: 1em;
+        }
+    }
+
+    &__formation {
+
+        &__title {
+            font-size: 3em;
+            color: $grey-color;
+            font-weight: bold;
+            margin-top: 2.5em;
+        }
+    }
+
+    &__skills {
+        display: flex;
+        margin: 6em 0 0 0;
+        
+        
+
+       &__lists {
+            width: 100%;
+            
+            
+            flex-flow: wrap column;
+
+            &__subtitle {
+                margin: 0 0 1.5em 0;
+                font-size: 2em;
+                color: $grey-color;
+                font-weight: bold;
+                text-align: center;
+                
+            }
+
+            &__list {
+                
+                border-right: 2px solid grey;
+                
+                
+                
+    
+                &__element {
+                    margin: 1em 0 0 0;
+                    font-size: 1.5em;
+                    color: $grey-color;
+                    font-style: italic;
+                    text-align: center;
+                    
+                }
+            }
+
+        }
+       
+    }
 }
