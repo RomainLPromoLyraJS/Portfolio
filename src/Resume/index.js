@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 
 const Resume = () => {
@@ -37,7 +38,25 @@ const Resume = () => {
                         </ul>
                     </div>
                 </div>
-            
+                <div className="resume__experience">
+                    <h3 className="resume__experience__title">Expériences</h3>
+                    <article className="resume__experience__article">
+                        <h4 className="resume__experience__article__title">Apothéose O'clock : Projet Outsiders</h4>
+                        <p className="resume__experience__article__description">Développer une plateforme regroupant des personnes souhaitant pratiquer des sports outdoor en partageant les frais de transport. J'ai occupé le poste de Scrum Master et Développeur Front pour ce projet. Technologies utilisées pour le front : HTML, CSS, Javascript, React, Redux. Technologies utilisées pour le back : NodeJS, PostgreSQL, Json Web Token, Bcrypt.</p>
+                        <a className="resume__experience__article__link" href="https://www.youtube.com/watch?v=CSQhjBBMLcw&t=2505s" target="_blank">présentation youtube du projet Outsiders</a>
+                    </article>
+                </div>
+                <div className="resume__training">
+                    <h3 className="resume__training__title">Formation</h3>
+                    <article className="resume__training__article">
+                        <h4 className="resume__training__article__title">Certificat Opquast</h4>
+                        <p className="resume__training__article__description">Certification de maitrise qualité et d'acessibilité web. Diplôme obtenu avec un niveau Avancé (885/1000).</p>
+                    </article>
+                    <article className="resume__training__article">
+                        <h4 className="resume__training__article__title">Ecole O'Clock</h4>
+                        <p className="resume__training__article__description">Une formation en téléprésentiel - Labelisée Grande Ecole du Numérique. 700 heures intensives : 3 mois de socle (HTML5/CSS3/Javascript) 1 mois de spécialisation (ReactJS) et 1 mois de projet en autonomie. Passage du titre professionnel Développeur Web / Mobile Niveau III en cours.</p>
+                    </article>
+                </div>
         </div>
     );
 };

@@ -52,7 +52,7 @@
             &__subtitle {
                 margin: 0 0 1.5em 0;
                 font-size: 2em;
-                color: $grey-color;
+                color: $white-color;
                 font-weight: bold;
                 text-align: center;
                 
@@ -77,5 +77,82 @@
 
         }
        
+    }
+    
+    &__experience {
+
+        &__title {
+            font-size: 3em;
+            color: $grey-color;
+            font-weight: bold;
+            margin-top: 2.5em;
+        }
+
+        &__article {
+            
+            &__title {
+                font-size: 2.5em;
+                font-weight: bold;
+                margin: 2em 1em 1em 1em;
+                color: $white-color;
+
+            }
+
+            &__description {
+                color: $grey-color;
+                font-size: 1.5em;
+                margin: 1em 1em 2em 1.8em;
+                font-style: italic; 
+                
+            }
+
+            &__link {
+                color: $grey-color;
+                font-size: 1.8em;
+                margin: 1em 1em 1em 1.4em;
+                text-decoration: none;
+                text-transform: uppercase;
+                background: linear-gradient(to top, $white-color 0%, $white-color 5%, transparent 5.01%) no-repeat;
+                background-size: 0 100%;
+                transition: background-size 0.2s;
+                
+                &:hover {
+                    color: $white-color;
+                    transition: 0.5s ease-in-out;
+                    background-size: 100% 100%;
+                    
+                }
+            }
+        }
+    }
+
+    &__training {
+
+        &__title {
+            font-size: 3em;
+            color: $grey-color;
+            font-weight: bold;
+            margin-top: 2.5em;
+        }
+
+        &__article {
+            
+            &__title {
+                font-size: 2.5em;
+                font-weight: bold;
+                margin: 2em 1em 1em 1em;
+                color: $white-color;
+
+            }
+
+            &__description {
+                color: $grey-color;
+                font-size: 1.5em;
+                margin: 1em 1em 1em 1.8em;
+                font-style: italic; 
+                
+    
+            }
+        }
     }
 }
