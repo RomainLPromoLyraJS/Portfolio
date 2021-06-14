@@ -1,6 +1,8 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 
+import ResumeLink from '../assets/resume/CV-Romain-Lafosse.pdf';
+
 const Resume = () => {
     return (
         <div className="resume">
@@ -56,6 +58,11 @@ const Resume = () => {
                         <h4 className="resume__training__article__title">Ecole O'Clock</h4>
                         <p className="resume__training__article__description">Une formation en téléprésentiel - Labelisée Grande Ecole du Numérique. 700 heures intensives : 3 mois de socle (HTML5/CSS3/Javascript) 1 mois de spécialisation (ReactJS) et 1 mois de projet en autonomie. Passage du titre professionnel Développeur Web / Mobile Niveau III en cours.</p>
                     </article>
+                </div>
+                <div className="resume__links">
+                    <a className="resume__links__link" href={ResumeLink} target="blank">
+                    <button className="resume__links__button" type="button">Télécharger mon CV</button>
+                    </a>
                 </div>
         </div>
     );

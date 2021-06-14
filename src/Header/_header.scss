@@ -42,11 +42,10 @@
             text-decoration: none;
             background: linear-gradient(to top, $white-color 0%, $white-color 5%, transparent 5.01%) no-repeat;
             background-size: 0 100%;
-            transition: background-size 0.2s;
+            transition: background-size 0.3s ease-in-out;
             
             &:hover {
                 color: $white-color;
-                transition: 0.5s ease-in-out;
                 background-size: 100% 100%;
                 
             }
