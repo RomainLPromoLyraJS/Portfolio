@@ -1,0 +1,94 @@
+.contact {
+    min-height: calc(100vh - 384px);
+    margin: 100px 400px 0 400px;
+
+        &__title {
+        margin: 2em 0 0.2em 0;
+        font-size: 4em;
+        color: $gold-color;
+        font-weight: bold;
+        }
+
+        &__subtitle {
+            color: $grey-color;
+            font-size: 1.5em;
+            margin: 0.3em 0 1em 0;
+            font-style: italic; 
+            display: flex;
+            max-width: 25%;
+    
+            &::after {
+                content: "";
+                flex: 1 1;
+                border-bottom: 2px solid $grey-color;
+                margin: auto;
+                margin-left: 1em;
+            }
+        }
+
+        &__form {
+            margin: 8em;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid $gold-color;
+            border-radius: 50px;
+            padding: 4em;
+            
+
+            &__section {
+                margin-top: 4em;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                
+                
+                
+
+                &__label {
+                    margin-right: 1em;
+                    font-size: 1.5em;
+                    color: $white-color;
+                    align-items: flex-end;
+                }
+    
+                &__input {
+                    background-color: $dark-color;
+                    border: 2px solid $gold-color;
+                    border-radius: 50px;
+                    padding: 1.2em;
+                    color: $white-color;
+                    
+                    
+                }
+
+                &__textarea {
+                    background-color: $dark-color;
+                    border: 2px solid $gold-color;
+                    border-radius: 50px;
+                    padding: 1.2em;
+                    
+
+                    &::placeholder {
+                        color: $grey-color;
+                    }
+                }
+
+                &__button {
+                    font-size: 1.3em;
+                    padding: 1em 3em;
+                    color: $gold-color;
+                    background-color: $dark-color;
+                    border-radius: 50px;
+                    border: 1px solid $gold-color;
+                    transition: 0.3s ease-in-out;
+        
+                    &:hover {
+                        background-color: $white-color;
+                        color: $dark-color;
+                        cursor: pointer;
+                    }
+                }
+            }
+          
+        }
+}
