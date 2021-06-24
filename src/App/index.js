@@ -10,6 +10,7 @@ import About from '../About';
 import Resume from '../Resume';
 import Projects from '../Projects';
 import Contact from '../Contact';
+import ContactForm from '../ContactForm';
 import Footer from '../Footer';
 
 const App = () => {
@@ -32,6 +33,9 @@ const App = () => {
       </Route>
       <Route exact path='/contact'>
         <Contact />
+      </Route>
+      <Route exact path='/contact-form'>
+        <ContactForm />
       </Route>
 
       <Footer />

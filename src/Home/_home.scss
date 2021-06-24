@@ -1,12 +1,14 @@
 .home {
-    min-height: calc(100vh - 384px);
-    margin: 200px 250px 0 250px;
-    width: 70%;
+    min-height: calc(100vh - 349px);
+    margin: 0 auto;
+    width: 70vw;
    
     &__title {
-        font-size: 3em;
+        margin: 1.5em 0 0.2em 0;
+        font-size: 4em;
         color: $grey-color;
         font-weight: bold;
+        text-align: start;
 
         &__description {
             color: $grey-color;
@@ -27,7 +29,7 @@
 
         &__specialisation {
             margin: 2em 0 0 0;
-            font-size: 4em;
+            font-size: 5em;
             color: $gold-color;
             font-weight: bold;
         }

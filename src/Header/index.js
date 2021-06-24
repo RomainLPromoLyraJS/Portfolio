@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
+// import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 const Header = () => {
     
-    const [isDarkMode, setDarkMode] = React.useState(false);
-    const toggleDarkMode = (checked: boolean) => {
-      setDarkMode(checked);
-    };
+    // const [isDarkMode, setDarkMode] = React.useState(false);
+    // const toggleDarkMode = (checked: boolean) => {
+    //   setDarkMode(checked);
+    // };
 
     return (
         
@@ -22,7 +22,8 @@ const Header = () => {
                 <NavLink to="/resume" className="header__links__link">Mon CV</NavLink>
                 <NavLink to="/projects" className="header__links__link">Mes projets</NavLink>
                 <NavLink to="/contact" className="header__links__link">Contact</NavLink>
-                <DarkModeSwitch className="header__links__darkmode header__links__darkmode--active" checked={isDarkMode} onChange={toggleDarkMode} size={50}/>
+                <NavLink to="/contact-form" className="header__links__link">ContactForm</NavLink>
+                {/* <DarkModeSwitch className="header__links__darkmode header__links__darkmode--active" checked={isDarkMode} onChange={toggleDarkMode} size={50}/> */}
             </div>
        
         </header>

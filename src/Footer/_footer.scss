@@ -1,12 +1,13 @@
 .footer {
-    width: 100%;
+    width: 70vw;
     height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     color: $grey-color;
     font-size: 1.3em;
-    display: flex;
-    margin-top: 6em;
+    margin: 0 auto;
+    margin-top: 4em;
+    
     
     
     &__follow {
