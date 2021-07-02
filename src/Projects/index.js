@@ -26,6 +26,46 @@ const Projects = () => {
                     <a className="projects__section__project__links__link" href="#" target="_blank">Recette de crêpes<img className="projects__section__project__links__img" src={CrepeImg} alt="site d'une recette de crêpes en ReactJS" /></a>
                 </div>
             </div>
+            <div className="projects__section">
+                <div className="projects__section__project">
+                    <p className="projects__section__project__description">Un convertisseur de monnaie réalisé en Javascript.</p>
+                    <ul className="projects__section__project__lists">Technologies
+                        <li className="projects__section__project__lists__first">- HTML / CSS</li>
+                        <li className="projects__section__project__lists__list">- Javascript</li>
+                    </ul>
+                </div>
+                <div className="projects__section__project__links">
+                    
+                    <a className="projects__section__project__links__link" href="#" target="_blank">Recette de crêpes<img className="projects__section__project__links__img" src={CrepeImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+                </div>
+            </div>
+            <div className="projects__section">
+                <div className="projects__section__project">
+                    <p className="projects__section__project__description">Un convertisseur de monnaie réalisé en Javascript.</p>
+                    <ul className="projects__section__project__lists">Technologies
+                        <li className="projects__section__project__lists__first">- HTML / CSS</li>
+                        <li className="projects__section__project__lists__list">- Javascript</li>
+                    </ul>
+                </div>
+                <div className="projects__section__project__links">
+                    
+                    <a className="projects__section__project__links__link" href="#" target="_blank">Recette de crêpes<img className="projects__section__project__links__img" src={CrepeImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+                </div>
+            </div>
+            <div className="projects__section">
+                <div className="projects__section__project">
+                    <p className="projects__section__project__description">Mon site vitrine décrivant mon parcours et affichant mes projets codés.</p>
+                    <ul className="projects__section__project__lists">Technologies
+                        <li className="projects__section__project__lists__first">- HTML / CSS - Node Sass</li>
+                        <li className="projects__section__project__lists__list">- Javascript</li>
+                        <li className="projects__section__project__lists__list">- ReactJS</li>
+                    </ul>
+                </div>
+                <div className="projects__section__project__links">
+                    
+                    <a className="projects__section__project__links__link" href="/" target="_blank">Portfolio<img className="projects__section__project__links__img" src={CrepeImg} alt="site d'une recette de crêpes en ReactJS" /></a>
+                </div>
+            </div>
         </div>
     );
 };

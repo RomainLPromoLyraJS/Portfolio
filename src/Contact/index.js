@@ -18,7 +18,7 @@ const Contact = () => {
           setIsEmailState(true);
           setDisplayEmailError(false)
       } else {
-        // donc ici, lorsque l'email n'en est pas un, right?
+        
         
           //setTimeout is used here to allow the user to see, with each click on the button to submit the form, the animation of the error message. 
         //   setTimeout(() => {
@@ -30,6 +30,23 @@ const Contact = () => {
           
       }
     }
+
+    const isMessage = () => {
+      let regex = /^[a-zA-Z0-9._-]$/;
+
+      if (message.match(regex)) {
+
+        setIsEmailState(true);
+        setDisplayEmailError(false)
+      
+      } else {
+
+        setIsEmailState(false);
+        setDisplayEmailError(true)
+      }
+    }
+
+    
 
     // const failMessage = () => {
     //     let formMess = document.querySelector('.form-message');
@@ -43,6 +60,7 @@ const Contact = () => {
       event.preventDefault();
       // setState Email
       isEmail();
+      isMessage();
       if (name && isEmailState && message) {
           sendFeedback("template_5dpr8xr", {
               name,
@@ -130,7 +148,16 @@ const Contact = () => {
                     autoComplete="off"
                     />
                     </div>
-                    <div className="not-mail" style={displayEmailError ? {display : "block"} : {display : "none"}} >Email non valide</div>
+                    < div className = {
+                      displayEmailError ? "not-mail" : "toto"
+                    }
+                    style = {
+                      displayEmailError ? {
+                        display: "block", animation: "dongle 1s"
+                      } : {
+                        display: "none"
+                      }
+                    } > Email non valide</div>
                     <div className="contact__form__section contact__form__section__custom">
                     <label className="contact__form__section__label" htmlFor="message">Votre message *</label>
                     <textarea 
@@ -143,6 +170,16 @@ const Contact = () => {
                     value={message}
                     />
                     </div>
+                    < div className = {
+                      displayEmailError ? "not-mail" : "toto"
+                    }
+                    style = {
+                      displayEmailError ? {
+                        display: "block", animation: "dongle 1s"
+                      } : {
+                        display: "none"
+                      }
+                    } > Message non rempli</div>
                     <div className="contact__form__section">
                     <button 
                     className="contact__form__section__button" 

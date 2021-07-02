@@ -1,7 +1,8 @@
 .contact {
-    min-height: calc(100vh - 384px);
-    margin: 0 auto;
-    width: 70vw;
+    // min-height: calc(100vh - 384px);
+    // margin: 0 auto;
+    // width: 70vw;
+    height: 100%;
     
         &__maintitle {
 
@@ -116,9 +117,7 @@
 .not-mail {
     display: none;
     color: #ff4d4d;
-    // right: 0;
     transform-origin: 50% 50%;
-    // border: red solid 1px;
   }
   @keyframes dongle {
     0% {

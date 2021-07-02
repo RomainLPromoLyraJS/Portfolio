@@ -11,9 +11,7 @@ const About = () => {
            </div>
            <div className="about__section">
                 <div className="about__section__article">
-                    <article className="about__section__article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ab exercitationem unde voluptas accusamus odio ut. Quibusdam cumque non aliquid corrupti? Adipisci atque minus ratione, excepturi qui pariatur quo odit?
-           Maxime delectus perferendis neque nobis placeat exercitationem nisi nostrum sint, expedita esse quam fugiat asperiores aspernatur cum nemo consequuntur minus nulla. Velit delectus incidunt voluptatum ea. Accusamus quae neque tempore.
-           Perferendis aut magni, at quia repellendus praesentium, neque recusandae molestias sint itaque dolorum quam nam ratione hic accusamus dolores! Omnis ex dolorum tenetur tempore illo deserunt? Animi ad inventore harum.
+                    <article className="about__section__article__text">Je me présente, Romain, jeune curieux de l'informatique et développeur web fullstack JS. Après avoir passé une dizaine d'années dans le monde de la boulangerie où j'ai appris la rigueur, le sérieux du travail et les horaires exigeantes, presque autant de temps dans l'univers de l'art dramatique qui m'ont permis de m'adapter à chaque situation, je me suis reconverti dans le développement Web avec tout autant de passion et d'envie. Curieux, fort de proposition et à l'aise à l'oral, je me ferais un plaisir de permettre le développement et l'accroissement de votre entreprise de part ma contribution.
            </article> 
            </div>
            <div className="about__section__img">

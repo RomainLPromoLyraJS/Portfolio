@@ -1,5 +1,5 @@
 .header {
-    width: 100%;
+    // width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: $dark-color;
@@ -13,7 +13,7 @@
         }
 
         &__title {
-            font-size: 6em;
+            font-size: 4em;
             padding: 0.2em 0.4em;
             color: $white-color;
             text-decoration: black;
@@ -22,7 +22,7 @@
 
             &__letter {
                 color: $gold-color;
-                font-size: 4rem;
+                font-size: 3rem;
                 text-decoration: black;
             }
         }    
@@ -33,6 +33,13 @@
         font-size: 1.5em;
         padding: 0.8em;
         margin: 1em 2em 1em 3em;
+        display: flex;
+        flex-wrap: wrap;
+        // @include media('<=phone') {
+        //     // display: none;
+        //     flex-direction: column;
+        //     height: 200px;
+        // }
         
         
     
@@ -48,6 +55,17 @@
                 color: $white-color;
                 background-size: 100% 100%;
                 
+            }
+        }
+
+        &__button {
+            display: block;
+            background-color: yellow;
+            color: red;
+            width: 100%;
+            height: 100%;
+            @include media('<=phone') {
+                display: none;
             }
         }
 

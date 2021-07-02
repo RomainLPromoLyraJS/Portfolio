@@ -51,6 +51,10 @@ const Resume = () => {
                 <div className="resume__training">
                     <h3 className="resume__training__title">Formation</h3>
                     <article className="resume__training__article">
+                        <h4 className="resume__training__article__title">Titre Professionnel de Développeur Web et Web Mobile</h4>
+                        <p className="resume__training__article__description">Certification inscrite au RNCP (Répertoire National de la Certification Professionnelle) de développeur web et web mobile de niveau 5 au barème européen, équivalent à Bac + 2.</p>
+                    </article>
+                    <article className="resume__training__article">
                         <h4 className="resume__training__article__title">Certificat Opquast</h4>
                         <p className="resume__training__article__description">Certification de maitrise qualité et d'acessibilité web. Diplôme obtenu avec un niveau Avancé (885/1000).</p>
                     </article>

@@ -1,11 +1,15 @@
 .home {
-    min-height: calc(100vh - 349px);
-    margin: 0 auto;
-    width: 70vw;
+    // min-height: calc(100vh - 349px);
+    // margin: 0 1em;
+    // width: 70vw;
+    // @include media(">=tablet") {
+    //     min-height: calc(100vh - 12px);
+    //     max-width: 1280px;
+    //   }
    
     &__title {
         margin: 1.5em 0 0.2em 0;
-        font-size: 4em;
+        font-size: 2em;
         color: $grey-color;
         font-weight: bold;
         text-align: start;
@@ -16,7 +20,7 @@
             margin: 0.3em 0;
             font-style: italic; 
             display: flex;
-            max-width: 25%;
+            // max-width: 25%;
 
             &::after {
                 content: "";
@@ -24,14 +28,16 @@
                 border-bottom: 2px solid $grey-color;
                 margin: auto;
                 margin-left: 1em;
+                margin-right: 1em;
             }
         }
 
         &__specialisation {
-            margin: 2em 0 0 0;
-            font-size: 5em;
+            margin: 2em 0;
+            font-size: 3em;
             color: $gold-color;
             font-weight: bold;
+            text-align: center;
         }
     }
 

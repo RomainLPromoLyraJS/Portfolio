@@ -1,7 +1,12 @@
 .projects {
-    min-height: calc(100vh - 284px);
-    margin: 0 auto;
-    width: 70vw;
+    // min-height: calc(100vh - 284px);
+    // margin: 0 auto;
+    // width: 70vw;
+    // height: 100%;
+    @include media(">=tablet") {
+        // min-height: calc(100vh - 12px);
+        // max-width: 1280px;
+      }
 
     &__maintitle {
 
@@ -32,14 +37,19 @@
     
     &__section {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         margin-top: 8em;
+        @include media(">=tablet") {
+            min-height: calc(100vh - 12px);
+            max-width: 1280px;
+          }
 
         &__project {
             display: flex;
             flex-direction: column;
-            margin-right: 3em;
+            flex-basis: 50%;
+            justify-content: space-around;
             
             &__description {
                 font-size: 1.8em;
