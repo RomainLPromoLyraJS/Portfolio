@@ -24,7 +24,7 @@ const Header = () => {
                 <NavLink to="/projects" className="header__links__link">Mes projets</NavLink>
                 <NavLink to="/contact" className="header__links__link">Contact</NavLink>
                 <NavLink to="/contact-form" className="header__links__link">ContactForm</NavLink>
-                <button className="header__links__button"><i class="fas fa-bars"></i></button>
+                <button className="header__links__button"><i className="fas fa-bars"></i></button>
                 {/* <DarkModeSwitch className="header__links__darkmode header__links__darkmode--active" checked={isDarkMode} onChange={toggleDarkMode} size={50}/> */}
             </div>
         </header>
