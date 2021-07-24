@@ -1,11 +1,6 @@
 .home {
-    // min-height: calc(100vh - 349px);
-    // margin: 0 1em;
-    // width: 70vw;
-    // @include media(">=tablet") {
-    //     min-height: calc(100vh - 12px);
-    //     max-width: 1280px;
-    //   }
+    width: 90%;
+    margin: 0 auto;
    
     &__title {
         margin: 1.5em 0 0.2em 0;

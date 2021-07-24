@@ -9,7 +9,7 @@ const HamburgerMenu = () => {
     return (
         <nav className="hamburger">
             {isHamburgerMenu && (
-                <ul className="hamburger__list">
+            <ul className="hamburger__list">
                 <li className="hamburger__list__items">Qui suis-je</li>
                 <li className="hamburger__list__items">Mon CV</li>
                 <li className="hamburger__list__items">Mes Projets</li>
