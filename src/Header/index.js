@@ -1,14 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import HamburgerMenu from './HamburgerMenu';
+import HamburgerMenu from './HamburgerMenu';
 // import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 const Header = () => {
     
-    // const [isDarkMode, setDarkMode] = React.useState(false);
-    // const toggleDarkMode = (checked: boolean) => {
-    //   setDarkMode(checked);
-    // };
+    // const [isHamburgerMenu, setHamburgerMenu] = useState(false);
+    // const [isDarkMode, setDarkMode] = useState(false);
+
+
+    // const showHamburgerMenu = () => setHamburgerMenu(!isHamburgerMenu);
+    
 
     return (
         
@@ -24,7 +26,8 @@ const Header = () => {
                 <NavLink to="/projects" className="header__links__link">Mes projets</NavLink>
                 <NavLink to="/contact" className="header__links__link">Contact</NavLink>
                 <NavLink to="/contact-form" className="header__links__link">ContactForm</NavLink>
-                <button className="header__links__button"><i className="fas fa-bars"></i></button>
+                <HamburgerMenu />
+                {/* <button className={isHamburgerMenu ? "header__links__button active" : "header__links__button"} onClick={showHamburgerMenu}><i className="fas fa-bars"></i></button> */}
                 {/* <DarkModeSwitch className="header__links__darkmode header__links__darkmode--active" checked={isDarkMode} onChange={toggleDarkMode} size={50}/> */}
             </div>
         </header>
