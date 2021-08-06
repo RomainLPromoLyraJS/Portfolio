@@ -7,15 +7,20 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [error, setError] = useState("");
-    const [isEmailState, setIsEmailState] = useState(false); // --> false by default, nothing is displayed.
-    const [displayEmailError, setDisplayEmailError] = useState(false)
-  
+    // Email State
+    const [isEmailState, setEmailState] = useState(false); // --> false by default, nothing is displayed.
+    const [displayEmailError, setDisplayEmailError] = useState(false);
+    // Message State
+    // const [isMessageState, setMessageState] = useState(false);
+    // const [displayMessageError, setDisplayMessageError] = useState(false);
+
+    
     const isEmail = () => {
       let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   
       if (email.match(regex)) {
         
-          setIsEmailState(true);
+          setEmailState(true);
           setDisplayEmailError(false)
       } else {
         
@@ -25,43 +30,33 @@ const Contact = () => {
         //     mail.style.animation = 'none';
         //   }, 1000)
         
-          setIsEmailState(false);
+          setEmailState(false);
           setDisplayEmailError(true)
           
       }
     }
 
-    const isMessage = () => {
-      let regex = /^[a-zA-Z0-9._-]$/;
+    // const isMessage = () => {
+    //   let regex = /^[a-zA-Z0-9._-]$/;
 
-      if (message.match(regex)) {
+    //   if (message.match(regex)) {
 
-        setIsEmailState(true);
-        setDisplayEmailError(false)
+    //     setMessageState(true);
+    //     setDisplayMessageError(false)
       
-      } else {
+    //   } else {
 
-        setIsEmailState(false);
-        setDisplayEmailError(true)
-      }
-    }
-
-    
-
-    // const failMessage = () => {
-    //     let formMess = document.querySelector('.form-message');
-
-    //     formMess.innerHTML = 'merci de remplir correctement les champs requis *';
-    //     formMess.style.opacity = '1';
-    //     formMess.style.background = 'rgb(253,87,87)';
+    //     setMessageState(false);
+    //     setDisplayMessageError(true)
+    //   }
     // }
     
     const handleSubmit = (event) => {
       event.preventDefault();
-      // setState Email
+      // setState
       isEmail();
-      isMessage();
-      if (name && isEmailState && message) {
+      // isMessage();
+      if (name && !isEmailState && message) {
           sendFeedback("template_5dpr8xr", {
               name,
               company,
@@ -71,7 +66,6 @@ const Contact = () => {
           });
       } else {
           console.log('error : name, email or message are not completed');
-        //   failMessage();
       }
   
   };
