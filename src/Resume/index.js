@@ -32,7 +32,7 @@ const Resume = () => {
                     </div>
                     <div className="resume__skills__lists">
                         <h4 className="resume__skills__lists__subtitle">Outils</h4>
-                        <ul className="resume__skills__lists__list">
+                        <ul className="resume__skills__lists__list__last">
                             <li className="resume__skills__lists__list__element">Visual Code Studio</li>
                             <li className="resume__skills__lists__list__element">Git</li>
                             <li className="resume__skills__lists__list__element">Github</li>
