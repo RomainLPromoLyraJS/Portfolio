@@ -20,6 +20,9 @@
         display: flex;
         max-width: 100%;
         text-align: start;
+        @include media('>=desktop') {
+            max-width: 40%;
+        }
 
         &::after {
             content: "";
