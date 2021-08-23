@@ -20,6 +20,9 @@
       font-style: italic;
       display: flex;
       max-width: 100%;
+      @include media('>=desktop') {
+        max-width: 28%;
+      }
 
       &::after {
         content: "";
