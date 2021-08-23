@@ -1,10 +1,6 @@
 .home {
     width: 90%;
     margin: 0 auto;
-    @include media('>=desktop') {
-        // height: 100%;
-    }
-    
    
     &__title {
         margin: 1.5em 0 0.2em 0;
@@ -20,7 +16,7 @@
             font-style: italic; 
             display: flex;
             
-            @include media('>=desktop') {
+            @include media('>tablet') {
                 max-width: 25%;
             }
 
@@ -40,7 +36,7 @@
             color: $gold-color;
             font-weight: bold;
             text-align: center;
-            @include media('>=desktop') {
+            @include media('>tablet') {
                 font-size: 3.5em;
             }
         }
