@@ -4,7 +4,8 @@
   flex-direction: column;
   margin: 0 auto;
   width: 80%;
-  @include media(">=tablet") {
+  @include media(">=desktop") {
+    margin-bottom: 2em;
   }
 
   &__maintitle {
@@ -22,6 +23,9 @@
       font-style: italic;
       display: flex;
       max-width: 100%;
+      @include media('>=desktop') {
+        max-width: 30%;
+    }
 
       &::after {
         content: "";
@@ -39,6 +43,12 @@
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 3em;
+    @include media('>=desktop') {
+      flex-direction: row;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 3em;
+  }
 
     &__portfolio {
       margin-bottom: 1.5em;
@@ -48,6 +58,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      @include media('>=desktop') {
+        margin-right: 2em;
+    }
 
       &__description {
         font-size: 1.5em;
@@ -89,6 +102,9 @@
         @include media(">=tablet") {
           width: 300px;
         }
+        @include media('>=desktop') {
+          display: none;
+      }
 
         &:hover {
           background-color: $white-color;
@@ -119,6 +135,12 @@
             height: 255px;
             width: 614px;
           }
+          @include media('>=desktop') {
+            transition: 0.1s all ease-in-out;
+            &:hover {
+              border: 2px solid $gold-color;
+            }
+        }
         }
 
         &__link {
@@ -127,6 +149,10 @@
           font-size: 1.8em;
           text-align: center;
           font-weight: bold;
+          @include media('>=desktop') {
+            flex-direction: column;
+            display: flex;
+        }
         }
       }
     }
