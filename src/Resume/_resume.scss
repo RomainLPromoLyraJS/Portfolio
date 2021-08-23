@@ -40,6 +40,9 @@
             color: $grey-color;
             font-weight: bold;
             margin-top: 1em;
+            @include media('>=desktop') {
+                margin-top: 2em;
+            }
         }
     }
 
@@ -47,6 +50,10 @@
         display: flex;
         justify-content: center;
         margin-top: 3em;
+        @include media('>=desktop') {
+            justify-content: space-around;
+            margin-top: 4em;
+        }
         
         
         
@@ -68,6 +75,10 @@
             &__list {
                 border-right: 2px solid grey;
                 padding: 0 0.7em;
+                @include media('>=desktop') {
+                    width: 100%;
+                    border-right: none;
+                }
 
                 &__last {
                     padding: 0 0.7em;
@@ -99,6 +110,9 @@
             color: $grey-color;
             font-weight: bold;
             margin-top: 1.5em;
+            @include media('>=desktop') {
+                margin-top: 2.5em;
+            }
         }
 
         &__article {
@@ -151,6 +165,9 @@
             color: $grey-color;
             font-weight: bold;
             margin-top: 1.5em;
+            @include media('>=desktop') {
+                margin-top: 2.5em;
+            }
         }
 
         &__article {
@@ -195,6 +212,9 @@
             border-radius: 50px;
             border: 1px solid $gold-color;
             transition: 0.3s ease-in-out;
+            @include media('>=desktop') {
+                margin: 2.5em 0 1.5em 0;
+            }
             
 
             &:hover {
